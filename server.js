@@ -31,8 +31,7 @@ var pages = {
              title : 'Page 3' ,
             heading: 'Page Three',
             content : ` <p>Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
-            </p>
-            `
+            </p>`
          }
 };
         
@@ -40,8 +39,8 @@ var pages = {
             var title = data.title;
             var heading = data.heading;
             var content = data.content;
-            var pageTemplate = 
-                        `<html>
+            var pageTemplate = {
+                        <html>
                         <head>
                         ${title}
                         <meta name="viewport" content="width-device-width, initial-scale=1" />
@@ -52,14 +51,14 @@ var pages = {
                         <div>
                             <a href="/">Home</a>
                             <hr/>
-                        </div>
-                        ${heading}
+                        </div><h1>
+                        ${heading}</h1>
                         <div>
                             ${content}
                         </div>
                         </div>
                         </body>
-                        </html>`;
+                        </html>
         return pageTemplate;
         }
 
