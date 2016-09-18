@@ -32,8 +32,8 @@ var pages = {
             heading: 'Page Three',
             content : ` <p>Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
             </p>`
-         }
-};
+         }};
+
         
         function createTemplate (data) {
             var title = data.title;
