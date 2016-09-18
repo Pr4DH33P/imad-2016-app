@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var pages = {
-         var page1 = {
+          'page1' : {
             title : 'Page 1' ,
             heading: 'Page One',
             content : ` <p>Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
@@ -18,30 +18,21 @@ var pages = {
                 Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
             </p>`
          },
-         var page2 = {
-            title : 'Page 1' ,
-            heading: 'Page One',
+          'page2' : {
+            title : 'Page 2' ,
+            heading: 'Page Two',
             content : ` <p>Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
-            </p>
-            <p>
-                Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
             </p>
             <p>
                 Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
             </p>`
          },
-         var page3 = 
-         {
-             title : 'Page 1' ,
-            heading: 'Page One',
+          'page3' : {
+             title : 'Page 3' ,
+            heading: 'Page Three',
             content : ` <p>Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
             </p>
-            <p>
-                Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
-            </p>
-            <p>
-                Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
-            </p>`
+            `
          }
 };
         
@@ -73,16 +64,16 @@ var pages = {
         }
 
 app.get('/', function (req, res) {
-  res.send(createTemplate(page1));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/page1',function (req, res){
-     res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
+app.get('/:pageName',function (req, res){
+    
     
 });
 
 app.get('/page2',function (req, res){
-   res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
+    res.send(createTemplate(page2));
     
 });
 
