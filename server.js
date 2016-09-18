@@ -59,7 +59,7 @@ var pages = {
                         </div>
                         </div>
                         </body>
-                        </html>`
+                        </html>`;
         return pageTemplate;
         }
 
