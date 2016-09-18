@@ -68,7 +68,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:pageName',function (req, res){
-    var pageName = req.params.pageName;
+    var pageName = req.param.pageName;
     res.send(createTemplate(pages(pageName)));
 });
 
