@@ -5,8 +5,48 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var page1 = {
+    title : "Page 1",
+    heading: "Page One",
+    content : ` <p>Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
+        </p>
+        <p>
+            Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
+        </p>
+        <p>
+            Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
+        </p>`
+};
+
+function createTemplate (data) {
+    var title = data.title;
+    var heading = data.heading;
+    var content = data.content;
+var pageTemplate = 
+`<html>
+ <head>
+    ${title}
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <link href="/ui/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+    <div>
+        <a href="/">Home</a>
+        <hr/>
+    </div>
+    ${heading}
+    <div>
+        ${content}
+    </div>
+    </div>
+</body>
+</html>`
+    return pageTemplate;
+}
+
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.send(createTemplate(page1));
 });
 
 app.get('/page1',function (req, res){
