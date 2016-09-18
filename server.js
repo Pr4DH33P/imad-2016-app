@@ -68,8 +68,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:pageName',function (req, res){
-    var pageName = req.param.pageName;
-    res.send(createTemplate(pages(pageName)));
+    var pageName = req.params.pageName;
+    res.send(createTemplate(pages[pageName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
