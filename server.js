@@ -68,18 +68,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:pageName',function (req, res){
-    
-    
-});
-
-app.get('/page2',function (req, res){
-    res.send(createTemplate(page2));
-    
-});
-
-app.get('/page3',function (req, res){
-   res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
-    
+    var pageName = req.params.pageName;
+    res.send(createTemplate(pages(pageName)));
 });
 
 app.get('/ui/style.css', function (req, res) {
