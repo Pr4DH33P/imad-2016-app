@@ -73,9 +73,14 @@ app.get('/:pageName',function (req, res){
 });
 
 app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+ counter=counter+1;
+ res.send(counter.tostring());
 });
 
+var counter=0;
+app.get('/counter', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
