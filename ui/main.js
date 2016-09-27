@@ -1,4 +1,5 @@
 console.log('Loaded!');
+
 /*var img = document.getElementById('img');
 var marginLeft =0;
 function moveright(){
@@ -25,4 +26,3 @@ button.onclick = function() {
   request.open('GET','http://pr4dh33p.imad.hasura-app.io/counter',true);
   request.send(null);
 };
-
