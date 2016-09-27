@@ -72,6 +72,11 @@ app.get('/:pageName',function (req, res){
     res.send(createTemplate(pages[pageName]));
 });
 
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
