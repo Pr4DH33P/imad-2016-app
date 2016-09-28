@@ -51,22 +51,22 @@ submit.onclick = function () {
 var subcomment = document.getElementById('cmnt_btn');
 subcomment.onclick = function () {
     
-    var request = new XMLHttpRequest();
+    var request1 = new XMLHttpRequest();
   
-  request.onreadystatechange = function() {
-      if(request.readyState === XMLHttpRequest.DONE)
+  request1.onreadystatechange = function() {
+      if(request1.readyState === XMLHttpRequest.DONE)
       {
-          if(request.status === 200 )
+          if(request1.status === 200 )
           {
-           var comments = request.responseText;
+           var comments = request1.responseText;
            comments = JSON.parse(comments);
     var disp = '';
     for(var i=0;i<comments.length;i++){
         disp += '<li>' + comments[i] + '</li>';
     }
 
-    var ul = document.getElementById('cmntlist');
-    ul.innerHTML = disp;
+    var ulist = document.getElementById('cmntlist');
+    ulist.innerHTML = disp;
           }
       }
   };
