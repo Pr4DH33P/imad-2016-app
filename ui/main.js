@@ -16,3 +16,21 @@ button.onclick = function() {
   request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/counter' , true);
   request.send(null);
 };
+
+
+var nameInput = document.getElementById('input');
+var name = nameInput.value;
+var submit = doument.getElementById('submit_btn');
+submit.onclick = function () {
+    
+    
+    var names= ['Person 1','Person 2','Person 3'];
+    var list = '';
+    for(var i=0;i<names.length;i++){
+        list += '<li>' + names[i] + '</li>';
+    }
+
+    var ul = document.getElementById('namelist');
+    ul.innerHTML = list;
+    
+};
