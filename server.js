@@ -58,15 +58,23 @@ var pages = {
                             ${content}
                         </div>
                         </div>
+                        <hr>
                         <div class='footer'>
                          <input type='text' id='cmnt_box' placeholder='Type your comment'> </input>
                          <input type='submit' value='comment' id='cmnt_btn' > </input>
-                         <ul id='comments'></ul>
+                         <ul id='cmntlist'></ul>
                         </div>
                         </body>
                         </html>`;
         return pageTemplate;
         }
+
+var comments = [];
+app.get('/comment', function (req, res) {
+  var comment = req.query.comment;
+  comments.push(comment);
+  res.send(JSON.stringify(comments));
+});
 
 var names = [];
 app.get('/submit-name', function (req, res) {
