@@ -13,6 +13,6 @@ button.onclick = function() {
           }
       }
   };
-  request.open('GET','http://pr4dh33p.imad.hasura-app.io/counter',true);
+  request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/counter' , true);
   request.send(null);
 };
