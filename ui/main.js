@@ -1,10 +1,8 @@
-console.log('Loaded!');
-
 var button = document.getElementById('counter');
 button.onclick = function() {
   var request = new XMLHttpRequest();
   
-  request.onReadyStateChange = function() {
+  request.onreadystatechange = function() {
       if(request.readyState === XMLHttpRequest.Done)
       {
           if(request.Status === 200 )
