@@ -45,8 +45,33 @@ submit.onclick = function () {
   var name = nameInput.value;
   request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/submit-name?name=' + name , true);
   request.send(null);
+};
+
+
+var subcomment = document.getElementById('cmnt_btn');
+subcomment.onclick = function () {
     
-    
-    
-    
+    var request = new XMLHttpRequest();
+  
+  request.onreadystatechange = function() {
+      if(request.readyState === XMLHttpRequest.DONE)
+      {
+          if(request.status === 200 )
+          {
+           var comments = request.responseText;
+           comments = JSON.parse(comments);
+    var disp = '';
+    for(var i=0;i<comments.length;i++){
+        disp += '<li>' + comments[i] + '</li>';
+    }
+
+    var ul = document.getElementById('cmntlist');
+    ul.innerHTML = disp;
+          }
+      }
+  };
+  var cmntInput = document.getElementById('cmnt_box');
+  var cmnt = cmntInput.value;
+  request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/comment?cmnt=' + cmnt , true);
+  request.send(null);
 };
