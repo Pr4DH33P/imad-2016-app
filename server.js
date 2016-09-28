@@ -36,7 +36,7 @@ var pages = {
          };
 
         
-/*        function createTemplate (data) {
+        function createTemplate (data) {
             var title = data.title;
             var heading = data.heading;
             var content = data.content;
@@ -61,7 +61,7 @@ var pages = {
                         </body>
                         </html>`;
         return pageTemplate;
-        }*/
+        }
 
 var names = [];
 app.get('/submit-name', function (req, res) {
