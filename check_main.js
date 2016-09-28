@@ -1,15 +1,45 @@
-var button = document.getElementById('counter');
-button.onclick = function () {
-   var request = new XMLHttpRequest();
-   request.onreadystatechange = function () {
-      if (request.readyState === XMLHttpRequest.DONE) {
-          if (request.status === 200) {
-              var counter = request.responseText;
-              var span = document.getElementById('count');
-              span.innerHTML = counter.toString();          
-          }
-      }  
-    };
-    request.open('GET', 'http://coco98.imad.hasura-app.io/counter', true);
-    request.send(null);
-};
+var express = require('express');
+var morgan = require('morgan');
+var path = require('path');
+
+var app = express();
+app.use(morgan('combined'));
+
+
+var counter = 0;
+app.get('/counter', function (req, res) {
+  counter = counter + 1;
+  res.send(counter.toString());
+});
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/:pageName',function (req, res){
+    var pageName = req.params.pageName;
+    res.send(createTemplate(pages[pageName]));
+});
+
+app.get('/favicon.ico', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+app.get('/ui/main.js', function (req, res) {
+ res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+
+var port = 8080; // Use 8080 for local development because you might already have apache running on 80
+app.listen(8080, function () {
+  console.log(`IMAD course app listening on port ${port}!`);
+});
