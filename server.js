@@ -78,12 +78,12 @@ var pages = {
         return pageTemplate;
         }
 
-var comments = [];
+/*var comments = [];
 app.get('/comment', function (req, res) {
   var comment = req.query.comment;
   comments.push(comment);
   res.send(JSON.stringify(comments));
-});
+});*/
 
 var pool = new Pool(config);
 app.get('/db', function (req, res) {
