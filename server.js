@@ -57,11 +57,12 @@ var pages = {
                         <link href="/ui/style.css" rel="stylesheet" />
                         </head>
                         <body>
-                        <div class="container">
-                         <div class='header'>
+                        <div class='header'>
             <a href='/'>Home  </a><a href='/page1'>Bio Data  </a> <a href='/page2'>Contact  </a>
             <hr>
-        </div><h1>
+        </div>
+                        <div class="container">
+                         <h1>
                         ${heading}</h1>
                         <div>
                             ${content}
