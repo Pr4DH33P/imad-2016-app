@@ -58,7 +58,8 @@ var pages = {
                         </head>
                         <body>
                         <div class='header'>
-                        <a href='/'>Home  </a><a href='/page1'>Bio Data  </a> <a href='/page2'>Contact  </a></div>
+                        <a href='/'>Home</a>&nbsp;&nbsp;&nbsp;<a href='/page1'>Bio Data</a>&nbsp;&nbsp;&nbsp;
+                        <a href='/page2'>Contact</a>&nbsp;&nbsp;&nbsp;</div>
                         <hr>
                         <div class="container">
                          <h1>
