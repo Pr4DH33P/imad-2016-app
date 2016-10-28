@@ -30,6 +30,6 @@ body {
     }
     
 .header {
-   display:block; 
+   display:inline-block; 
    width: 0.5;
 }
