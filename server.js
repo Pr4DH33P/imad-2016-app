@@ -28,8 +28,8 @@ var pages = {
             </p>`
          },
           'page2' : {
-            title : 'Page 2' ,
-            heading: 'Page Two',
+            title : 'Contact' ,
+            heading: 'Contact',
             content : ` <p>Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.Content of my first page.
             </p>
             <p>
