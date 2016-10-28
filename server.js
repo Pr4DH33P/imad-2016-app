@@ -69,11 +69,11 @@ var pages = {
                         <hr>
                         </div>
                         
-                        <div class='footer'>
+                       <!-- <div class='footer'>
                          <input type='text' id='cmnt_box' placeholder='Type your comment'> </input>
                          <input type='submit' value='comment' id='cmnt_btn' > </input>
                          <ul id='cmntlist'></ul>
-                        </div>
+                        </div> -->
                         </body>
                         </html>`;
         return pageTemplate;
