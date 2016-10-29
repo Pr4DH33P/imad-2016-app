@@ -58,7 +58,7 @@ var pages = {
                         </head>
                         <body>
                         <div class="container">
-                         <a href='/'>Home</a>&nbsp;&nbsp;&nbsp;<a href='/pages/page1'>Profile</a>&nbsp;&nbsp;&nbsp;
+                         <a href='/'>Home</a>&nbsp;&nbsp;&nbsp;<a href='/page/Profile'>Profile</a>&nbsp;&nbsp;&nbsp;
                         <a href='/page2'>Contact</a>&nbsp;&nbsp;&nbsp;
                         <hr>
                          <h1>
@@ -130,8 +130,8 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/:pageName',function (req, res){
-    pool.query('SELECT * FROM page where Title="" ' + req.params.pageName, function(err,result){
+app.get('/page/:pageName',function (req, res){
+    pool.query("SELECT * FROM page where Title='' " + req.params.pageName, function(err,result){
          if (err){
           res.status(500).send(err.toString());
          }
