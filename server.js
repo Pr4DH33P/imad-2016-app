@@ -130,9 +130,20 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/:pageName',function (req, res){
-    var pageName = req.params.pageName;
-    res.send(createTemplate(pages[pageName]));
+app.get('/pages/:pageName',function (req, res){
+    pool.query("SELECT * FROM page where Title=' ' " +req.params.pageName, function(err,result){
+         if (err){
+          res.status(500).send(err.toString());
+      }
+      else{
+          if(result.rows.length === 0){
+          res.status(404).send('404! Page not found!');    
+          }
+          else{
+          var pageData= result.rows[0];
+          res.send(createTemplate(pageData));}}
+    });
+    
 });
 
 
