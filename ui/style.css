@@ -50,8 +50,8 @@ section.flat button.active {
   background-color: #27496d;
  
 }
-section.dp image:hover,
-section.dp image.hover {
+.img image:hover,
+.img image.hover {
     height: 50%;
     width: 50%;
 }
