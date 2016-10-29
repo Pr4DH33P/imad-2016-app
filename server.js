@@ -58,7 +58,7 @@ var pages = {
                         </head>
                         <body>
                         <div class="container">
-                         <a href='/'>Home</a>&nbsp;&nbsp;&nbsp;<a href='/page1'>Profile</a>&nbsp;&nbsp;&nbsp;
+                         <a href='/'>Home</a>&nbsp;&nbsp;&nbsp;<a href='/pages/page1'>Profile</a>&nbsp;&nbsp;&nbsp;
                         <a href='/page2'>Contact</a>&nbsp;&nbsp;&nbsp;
                         <hr>
                          <h1>
