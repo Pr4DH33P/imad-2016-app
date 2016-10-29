@@ -10,7 +10,7 @@ var config = {
   host: 'db.imad.hasura-app.io',
   port: '5432',
   user: 'pr4dh33p',
-  password: process.env.dbpsswd,
+  password: process.env.DB_PASSWORD,
   database: 'pr4dh33p',
 };
 
