@@ -41,7 +41,7 @@ section.flat button {
 
 section.flat button:hover,
 section.flat button.hover {
-  background-color: #346392;
+  background-color: #f7f061;
   text-shadow: -1px 1px #27496d;
 }
 
