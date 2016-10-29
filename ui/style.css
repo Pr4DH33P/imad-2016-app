@@ -52,6 +52,6 @@ section.flat button.active {
 }
 section.dp image:hover,
 section.dp image.hover {
-    height: 300px;
-    width: 300px;
+    height: 50%;
+    width: 50%;
 }
