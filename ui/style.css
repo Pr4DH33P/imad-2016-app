@@ -42,11 +42,11 @@ section.flat button {
 section.flat button:hover,
 section.flat button.hover {
   background-color: #f7f061;
-  text-shadow: 3px 3px #27496d;
+  
 }
 
 section.flat button:active,
 section.flat button.active {
   background-color: #27496d;
-  text-shadow: -1px 1px #193047;
+ 
 }
