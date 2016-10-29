@@ -131,7 +131,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/page/:pageName',function (req, res){
-    pool.query("SELECT * FROM page where Title =" + req.params.pageName, function(err,result){
+    pool.query("SELECT * FROM page where Title =''" + req.params.pageName, function(err,result){
          if (err){
           res.status(500).send(err.toString());
          }
