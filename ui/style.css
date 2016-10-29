@@ -32,18 +32,22 @@ body {
     text-align : center;
 }
     
-section.border button {
-  color: #6496c8;
-  background:  #f9f9f9;
-  border: solid 5px #6496c8;
+section.press button {
+  color: #fff;
+  background-color: #6496c8;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px #27496d;
 }
-section.border button:hover,
-section.border button.hover {
-  border-color: #346392;
-  color: #346392;
+
+section.press button:hover,
+section.press button.hover {
+  background-color: #417cb8
 }
-section.border button:active,
-section.border button.active {
-  border-color: #27496d;
-  color: #27496d;
+
+section.press button:active,
+section.press button.active {
+  background-color: #417cb8;
+  box-shadow: 0 5px #27496d;
+  transform: translateY(5px);
 }
