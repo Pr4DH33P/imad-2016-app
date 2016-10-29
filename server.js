@@ -25,7 +25,7 @@ var config = {
                         <body>
                         <div class="container">
                         <hr><section class="flat">
-                           <a href='/'><button>Home</button></a>&nbsp;&nbsp;&nbsp;<a href='/Profile'><button>Profile</button></a>&nbsp;&nbsp;&nbsp;
+                           <a href='/'><button>Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/Profile'><button>Profile</button></a>&nbsp;&nbsp;&nbsp;
                            <a href='/Contact'><button>Contact</button></a>&nbsp;&nbsp;&nbsp;</section><hr>
                         <h1>${heading}</h1>
                         <div>${content}</div>
