@@ -37,6 +37,7 @@ section.flat button {
   background-color: #6496c8;
   text-shadow: -1px 1px #417cb8;
   border: none;
+  height: 25px;
 }
 
 section.flat button:hover,
