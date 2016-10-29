@@ -32,22 +32,21 @@ body {
     text-align : center;
 }
     
-section.press button {
+section.flat button {
   color: #fff;
   background-color: #6496c8;
+  text-shadow: -1px 1px #417cb8;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 10px #27496d;
 }
 
-section.press button:hover,
-section.press button.hover {
-  background-color: #417cb8
+section.flat button:hover,
+section.flat button.hover {
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
 }
 
-section.press button:active,
-section.press button.active {
-  background-color: #417cb8;
-  box-shadow: 0 5px #27496d;
-  transform: translateY(5px);
+section.flat button:active,
+section.flat button.active {
+  background-color: #27496d;
+  text-shadow: -1px 1px #193047;
 }
