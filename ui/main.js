@@ -75,3 +75,4 @@ subcomment.onclick = function () {
   request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/comment?cmnt=' + cmnt , true);
   request.send(null);
 };
+
