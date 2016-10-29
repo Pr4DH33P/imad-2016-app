@@ -34,7 +34,7 @@ body {
     
 section.border button {
   color: #6496c8;
-  background: rgba(0,0,0,0);
+  background:  #f9f9f9;
   border: solid 5px #6496c8;
 }
 section.border button:hover,
