@@ -120,9 +120,7 @@ app.get('/:pageName',function (req, res){
     });
 });
 
-submit_btn.onclick = function () {
-    pool.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
- };
+
 
 
 
