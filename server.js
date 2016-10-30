@@ -26,7 +26,7 @@ var config = {
                         <div class="container">
                         <hr><section class="flat">
                            <a href='/'><button>Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/Profile'><button>Profile</button></a>&nbsp;&nbsp;&nbsp;
-                           <a href='/Contact'><button>Contact</button></a>&nbsp;&nbsp;&nbsp;<a href='/App'><button>WebApp</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</section><hr>
+                           <a href='/Contact'><button>Contact</button></a>&nbsp;&nbsp;&nbsp;<a href='/App/WebApp'><button>WebApp</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</section><hr>
                         <h1>${heading}</h1>
                         <div>${content}</div>
                         <hr>
@@ -80,7 +80,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/App', function (req, res) {
+app.get('/App/WebApp', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'app.html'));
 });
 
