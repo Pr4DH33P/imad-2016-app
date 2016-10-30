@@ -56,3 +56,9 @@ section.flat button.active {
     height: 50%;
     width: 50%;
 }
+
+input {
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+}
