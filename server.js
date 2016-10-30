@@ -41,12 +41,7 @@ var config = {
         return pageTemplate;
         }
         
-var submit_btn = document.getElementById('submit_btn');
-var pool1 = new Pool(config);
-submit_btn.onclick = function () {
-    pool1.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
- };
- 
+
 /*var comments = [];
 app.get('/comment', function (req, res) {
   var comment = req.query.comment;
