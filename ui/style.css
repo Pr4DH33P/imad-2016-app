@@ -58,7 +58,18 @@ section.flat button.active {
 }
 
 .submit {
-    border: 0;
-    background: none;
-    -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background: #3cb0fd;
+  text-decoration: none;
 }
