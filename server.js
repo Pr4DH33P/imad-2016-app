@@ -105,6 +105,9 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 var pool = new Pool(config);
+submit_btn.onclick = function () {
+    pool.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
+ };
 app.get('/:pageName',function (req, res){
     pool.query("SELECT * FROM page where Title =$1" , [req.params.pageName] , function(err,result){
          if (err){
