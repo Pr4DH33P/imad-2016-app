@@ -75,7 +75,6 @@ subcomment.onclick = function () {
   request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/comment?cmnt=' + cmnt , true);
   request.send(null);
 };*/
-var Pool = require('pg').Pool;
 var config = {
   host: 'db.imad.hasura-app.io',
   port: '5432',
