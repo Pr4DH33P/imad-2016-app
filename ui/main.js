@@ -83,5 +83,5 @@ var password = document.getElementById('password').value;
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
-    pool.query("INSERT INTO 'user' ('name', 'age', 'email') VALUES ($usrname, $age, $email);");
+    pool.query('INSERT INTO "user" ("name", "age", "email") VALUES ("$usrname", "$age", "$email");');
  };
