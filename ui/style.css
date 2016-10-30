@@ -64,6 +64,8 @@ section.flat button.active {
   color: #ffffff;
   font-size: 20px;
   background: #3498db;
+  padding-top: 3px;
+  padding-bottom: 3px;
   
 }
 
