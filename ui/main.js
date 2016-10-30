@@ -6,6 +6,6 @@ var submit_btn = document.getElementById('submit_btn');
 var form = document.getElementById("form");
 document.getElementById("submit_btn").addEventListener("click", function () {
   form.submit(),
-  alert('$(name)');
+  alert(`$(name)`);
     
 });
