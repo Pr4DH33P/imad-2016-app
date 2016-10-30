@@ -1,4 +1,4 @@
-var button = document.getElementById('counter');
+/*var button = document.getElementById('counter');
 button.onclick = function() {
   var request = new XMLHttpRequest();
   
@@ -75,9 +75,14 @@ subcomment.onclick = function () {
   request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/comment?cmnt=' + cmnt , true);
   request.send(null);
 };
-
+*/
 var usrname = document.getElementById('usrname').value;
 var email = document.getElementById('email').value;
 var age = document.getElementById('age').value;
 var password = document.getElementById('password').value;
 
+var submit = document.getElementById('submit_btn');
+submit.onclick = function () {
+    
+    
+ };
