@@ -81,6 +81,7 @@ var email = document.getElementById('email').value;
 var age = document.getElementById('age').value;
 var password = document.getElementById('password').value;
 
+var pool = new Pool(config);
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     pool.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
