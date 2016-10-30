@@ -45,7 +45,7 @@ app.get('/comment', function (req, res) {
   var comment = req.query.comment;
   comments.push(comment);
   res.send(JSON.stringify(comments));
-});*/
+});
 var pool = new Pool(config);
 app.get('/db', function (req, res) {
     pool.query('SELECT * FROM user_data', function (err,result) {
@@ -57,7 +57,7 @@ app.get('/db', function (req, res) {
       }
   });
 });
-
+*/
 var names = [];
 app.get('/submit/name', function (req, res) {
   var name = req.query.name;
@@ -105,7 +105,7 @@ app.get('/App/WebApp', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
+var pool = new Pool(config);
 app.get('/:pageName',function (req, res){
     pool.query("SELECT * FROM page where Title =$1" , [req.params.pageName] , function(err,result){
          if (err){
