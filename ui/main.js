@@ -76,13 +76,3 @@ subcomment.onclick = function () {
   request.send(null);
 };
 */
-var usrname = document.getElementById('usrname').value;
-var email = document.getElementById('email').value;
-var age = document.getElementById('age').value;
-var password = document.getElementById('password').value;
-
-var pool1 = new Pool(config);
-var submit = document.getElementById('submit_btn');
-submit.onclick = function () {
-    pool1.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
- };
