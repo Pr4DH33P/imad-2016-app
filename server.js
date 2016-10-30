@@ -60,33 +60,7 @@ app.get('/db', function (req, res) {
   });
 });
 */
-var names = [];
-app.get('/submit/name', function (req, res) {
-  var name = req.query.name;
-  names.push(name);
-  res.send(JSON.stringify(names));
-});
 
-var ages = [];
-app.get('/submit/age', function (req, res) {
-  var age = req.query.age;
-  ages.push(age);
-  res.send(JSON.stringify(ages));
-});
-
-var emails = [];
-app.get('/submit/email', function (req, res) {
-  var email = req.query.email;
-  emails.push(email);
-  res.send(JSON.stringify(emails));
-});
-
-
-/*var counter = 0;
-app.get('/counter', function (req, res) {
-  counter = counter + 1;
-  res.send(counter.toString());
-});*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -121,9 +95,6 @@ app.get('/:pageName',function (req, res){
               res.send(createTemplate(pageData));}}
     });
 });
-
-
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
