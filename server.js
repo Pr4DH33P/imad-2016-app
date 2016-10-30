@@ -120,6 +120,10 @@ app.get('/:pageName',function (req, res){
     });
 });
 
+submit.onclick = function () {
+    pool.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
+ };
+
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
