@@ -1,4 +1,4 @@
-/*var button = document.getElementById('counter');
+var button = document.getElementById('counter');
 button.onclick = function() {
   var request = new XMLHttpRequest();
   
@@ -19,7 +19,7 @@ button.onclick = function() {
 
 
 
-var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit1_btn');
 submit.onclick = function () {
     
     var request = new XMLHttpRequest();
@@ -75,4 +75,3 @@ subcomment.onclick = function () {
   request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/comment?cmnt=' + cmnt , true);
   request.send(null);
 };
-*/
