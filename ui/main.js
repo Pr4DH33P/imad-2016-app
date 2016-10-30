@@ -75,18 +75,8 @@ subcomment.onclick = function () {
   request.open('GET', 'http://pr4dh33p.imad.hasura-app.io/comment?cmnt=' + cmnt , true);
   request.send(null);
 };*/
-var config = {
-  host: 'db.imad.hasura-app.io',
-  port: '5432',
-  user: 'pr4dh33p',
-  password: process.env.DB_PASSWORD,
-  database: 'pr4dh33p',
-};
 var usrname = document.getElementById('usrname').value;
 var email = document.getElementById('email').value;
 var age = document.getElementById('age').value;
 var password = document.getElementById('password').value;
 var submit = document.getElementById('submit_btn');
-submit.onclick = function () {
-    pool.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
- };
