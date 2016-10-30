@@ -105,9 +105,6 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 var pool = new Pool(config);
-submit_btn.onclick = function () {
-    pool.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
- };
 app.get('/:pageName',function (req, res){
     pool.query("SELECT * FROM page where Title =$1" , [req.params.pageName] , function(err,result){
          if (err){
@@ -122,8 +119,11 @@ app.get('/:pageName',function (req, res){
               res.send(createTemplate(pageData));}}
     });
 });
-
-
+var submit_btn = document.getElementById('submit_btn');
+var pool1 = new Pool(config);
+submit_btn.onclick = function () {
+    pool1.query(`INSERT INTO "user" ("name", "age", "email") VALUES ('asfgsdfg', '54', 'sfsdfgf');`);
+ };
 
 
 
