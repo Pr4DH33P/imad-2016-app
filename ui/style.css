@@ -59,14 +59,18 @@ section.flat button.active {
 
 
 .submit {
-  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 20px;
   background: #3498db;
-  
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
 
 .submit:hover {
   background: #3cb0fd;
+  text-decoration: none;
 }
