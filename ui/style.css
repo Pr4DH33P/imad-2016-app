@@ -57,7 +57,8 @@ section.flat button.active {
     width: 50%;
 }
 
-.submit {
+.submit button:active,
+.submit button.active{
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
