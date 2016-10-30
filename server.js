@@ -57,13 +57,31 @@ app.get('/db', function (req, res) {
       }
   });
 });
-/*var names = [];
-app.get('/submit-name', function (req, res) {
+
+var names = [];
+app.get('/submit/name', function (req, res) {
   var name = req.query.name;
   names.push(name);
+  pool.query('')
   res.send(JSON.stringify(names));
 });
-var counter = 0;
+
+var ages = [];
+app.get('/submit/age', function (req, res) {
+  var age = req.query.age;
+  ages.push(age);
+  res.send(JSON.stringify(ages));
+});
+
+var emails = [];
+app.get('/submit/email', function (req, res) {
+  var email = req.query.email;
+  emails.push(email);
+  res.send(JSON.stringify(emails));
+});
+
+
+/*var counter = 0;
 app.get('/counter', function (req, res) {
   counter = counter + 1;
   res.send(counter.toString());
