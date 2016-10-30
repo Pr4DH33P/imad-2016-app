@@ -57,7 +57,7 @@ section.flat button.active {
     width: 50%;
 }
 
-input {
+.submit {
     border: 0;
     background: none;
     -webkit-appearance: none;
