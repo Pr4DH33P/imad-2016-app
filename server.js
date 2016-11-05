@@ -12,6 +12,10 @@ var config = {
   database: 'pr4dh33p',
 };
 
+var hyperlink = { link : `<hr><section class="flat">
+                           <a href='/'><button>Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/Profile'><button>Profile</button></a>&nbsp;&nbsp;&nbsp;
+                           <a href='/Contact'><button>Contact</button></a>&nbsp;&nbsp;&nbsp;<a href='/App/WebApp'><button>WebApp</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</section><hr>`};
+
       function createTemplate (data) {
             var title = data.title;
             var heading = data.heading;
@@ -25,9 +29,7 @@ var config = {
                         </head>
                         <body>
                         <div class="container">
-                        <hr><section class="flat">
-                           <a href='/'><button>Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/Profile'><button>Profile</button></a>&nbsp;&nbsp;&nbsp;
-                           <a href='/Contact'><button>Contact</button></a>&nbsp;&nbsp;&nbsp;<a href='/App/WebApp'><button>WebApp</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</section><hr>
+                        ${link}
                         <h1>${heading}</h1>
                         <div>${content}</div>
                         <hr>
