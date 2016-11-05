@@ -80,6 +80,10 @@ app.get('/App/WebApp', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'app.html'));
 });
 
+app.get('/ui/head.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'head.html'));
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
