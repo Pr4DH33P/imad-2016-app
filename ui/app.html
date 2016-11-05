@@ -1,17 +1,16 @@
 <!doctype html>
 <html>
-<head>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-<title>WebApp</title>
+<head><title>WebApp</title>
+<script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("head.html"); 
+    });
+    </script>
  <link href="/ui/style.css" rel="stylesheet" /></head>
  <body>
  <div class="container">
-        
-<div w3-include-html="head.html"></div>
-<script>
-w3IncludeHTML();
-</script>
-
+        <div id="includedContent"></div>
         <br><form id="form">
          Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' id='usrname' name='name'> </input>
         <br><br>
