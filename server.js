@@ -14,7 +14,7 @@ var config = {
 
 var hyperlink = { link : `<hr><section class="flat">
                            <a href='/'><button>Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/Profile'><button>Profile</button></a>&nbsp;&nbsp;&nbsp;
-                           <a href='/Contact'><button>Contact</button></a>&nbsp;&nbsp;&nbsp;<a href='/App/WebApp'><button>WebApp</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</section><hr>`};
+                           <a href='/Contact'><button>Contact</button></a>&nbsp;&nbsp;&nbsp;<a href='/WebApp'><button>WebApp</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</section><hr>`};
 
       function createTemplate (data) {
             var title = data.title;
