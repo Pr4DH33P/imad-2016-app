@@ -1,17 +1,13 @@
 <!doctype html>
 <html>
 <head><title>WebApp</title>
-    <script> 
-    $(function(){
-      $("#includedContent").load("head.html"); 
-    });
-    </script>
+<script src="csi.js"></script> 
  <link href="/ui/style.css" rel="stylesheet" /></head>
  <body>
  <div class="container">
-        <script src="b.js"></script>
+        <div data-include="/ui/head.html"></div>
         <br><form id="form">
-         Namefgd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' id='usrname' name='name'> </input>
+         Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' id='usrname' name='name'> </input>
         <br><br>
          Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' id='age' name='age'> </input>
         <br><br>
