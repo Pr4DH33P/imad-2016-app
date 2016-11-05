@@ -83,8 +83,14 @@ app.get('/ui/madi.png', function (req, res) {
 });
 var pool = new Pool(config);
 var sub = function () {
-    pool.query('INSERT INTO "user" ("name", "age", "email")') ;
-    pool.query("VALUES ('asfgsdfg', '54', 'sfsdfgf');");
+    pool.query('INSERT INTO "user" (name, age, email) VALUES ($1, $2, $3)', [name,age,email], function(err,result){
+         if (err){
+          res.status(500).send(err.toString());
+      }
+      else{
+          res.send('Username'+name);
+      }
+    });
  };
 app.get('/:pageName',function (req, res){
     pool.query("SELECT * FROM page where Title =$1" , [req.params.pageName] , function(err,result){
