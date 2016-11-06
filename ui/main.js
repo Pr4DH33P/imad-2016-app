@@ -37,7 +37,7 @@ function loadLoginForm () {
         
     };
     
-    var register = document.getElementById('submit_btn');
+    var register = document.getElementById('register_btn');
     register.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
