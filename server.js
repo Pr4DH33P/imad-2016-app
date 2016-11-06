@@ -91,6 +91,17 @@ app.get('/ui/head.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'head.html'));
 });
 
+
+function hash (input, salt) {
+    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+    return ["pbkdf2", "10000", salt, hashed.toString('hex')].join('$');
+}
+
+app.get('/hash/:input', function(req, res) {
+   var hashedString = hash(req.params.input, 'this-is-some-random-string');
+   res.send(hashedString);
+});
+
 app.post('/create-user', function (req, res) {
    // username, password
    // {"username": "tanmai", "password": "password"}
@@ -106,16 +117,6 @@ app.post('/create-user', function (req, res) {
           res.send('User successfully created: ' + username);
       }
    });
-});
-
-function hash (input, salt) {
-    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
-    return ["pbkdf2", "10000", salt, hashed.toString('hex')].join('$');
-}
-
-app.get('/hash/:input', function(req, res) {
-   var hashedString = hash(req.params.input, 'this-is-some-random-string');
-   res.send(hashedString);
 });
 
 app.get('/ui/madi.png', function (req, res) {
