@@ -11,6 +11,9 @@ var config = {
   password: process.env.DB_PASSWORD,
   database: 'pr4dh33p',
 };
+var crypto = require('crypto');
+var bodyParser = require('body-parser');
+var session = require('express-session');
 
 var hyperlink = { link : `<hr><section class="flat">
                            <a href='/'><button>Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/Profile'><button>Profile</button></a>&nbsp;&nbsp;&nbsp;
