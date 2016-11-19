@@ -50,10 +50,6 @@ var hyperlink = { link : `<hr><section class="flat">
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
-app.use(session({
-    secret: 'pradheep',
-    cookie: { maxAge: 1000 * 60 * 60 * 24 * 7}
-}));
 
 /*var comments = [];
 app.get('/comment', function (req, res) {
