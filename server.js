@@ -32,7 +32,7 @@ var hyperlink = { link : `<hr><section class="flat">
                         </head>
                         <body>
                         <div class="container">
-                        ${link}
+                        
                         <h1>${heading}</h1>
                         <div>${content}</div>
                         <hr>
