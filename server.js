@@ -49,9 +49,6 @@ app.use(session({
         return pageTemplate;
         }
         
-var app = express();
-app.use(morgan('combined'));
-app.use(bodyParser.json());
 
 /*var comments = [];
 app.get('/comment', function (req, res) {
