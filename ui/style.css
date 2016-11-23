@@ -182,7 +182,10 @@ footer {background: #aaa;color:white;}
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+    height:600px;
+}
 
 .modal-footer {
     padding: 2px 16px;
