@@ -111,3 +111,13 @@ footer {background: #aaa;color:white;}
     .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
     footer {-webkit-order:3;order:3;}
 }
+
+
+.horizontalrule1 {
+    position:relative;
+    height:82px;
+    background: #f1f2f2;
+    overflow:hidden;
+    width:600%;
+    margin-left: -100%;
+}
