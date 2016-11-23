@@ -6,7 +6,7 @@ body {
 
 .center {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .text-big {
@@ -74,4 +74,13 @@ section.flat button.active {
 .submit:hover {
   background: #3cb0fd;
   text-decoration: none;
+}
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
 }
