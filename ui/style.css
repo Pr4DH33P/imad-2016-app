@@ -115,8 +115,6 @@ footer {background: #aaa;color:white;}
 
 .horizontalrule1 {
     position:relative;
-    height:82px;
-    background: #f1f2f2;
     overflow:hidden;
     width:600%;
     margin-left: -100%;
