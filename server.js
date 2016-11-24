@@ -70,7 +70,7 @@ app.use(session({
                         
                         
                         
-                        <div>${content}</div>
+                        <div class='container'>${content}</div>
                         <hr>
                         </div>
                         <!-- <div class='footer'>
