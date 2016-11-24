@@ -44,7 +44,7 @@ app.use(session({
       <h2>Menu</h2>
       </div>
       <div class="modal-body">
-       <!--<div style="background-color:#aaa;height: 100%;width: 30%;float:left;margin-left: -2%;position: absolute;margin-top: -1.3%;">-->
+       
          <section class="flat"><ul>
             <li><a href='/'><button>Home</button></a></li>
             <li><a href='/Profile'><button>Profile</button></a></li>
@@ -53,10 +53,12 @@ app.use(session({
          </ul></section>
         </div></div></div>
         
-        
+        <div class="flex-container">
             <div align='left' >
             <button id="myBtn" class=menu/>1</button>
-            <strong align=center>${heading}</strong></div>
+            <strong align=center>${heading}</strong></div> 
+
+        </div>
                         
                         
                         
