@@ -126,14 +126,6 @@ footer {background: #aaa;color:white;}
     position: fixed;
 }
 
-
-
-
-
-
-
-
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -152,7 +144,6 @@ footer {background: #aaa;color:white;}
     
 }
 
-/* Modal Content */
 .modal-content {
     position: fixed;
     background-color: #fefefe;
@@ -164,7 +155,7 @@ footer {background: #aaa;color:white;}
     animation-duration: 0.4s
 }
 
-/* The Close Button */
+
 .close {
     color: white;
     float: right;
@@ -196,7 +187,6 @@ footer {background: #aaa;color:white;}
     color: white;
 }
 
-/* Add Animation */
 @-webkit-keyframes slideIn {
     from {left: -300px; opacity: 0}
     to {left: 0; opacity: 1}
