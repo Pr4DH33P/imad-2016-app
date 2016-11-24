@@ -147,7 +147,7 @@ footer {background: #aaa;color:white;}
 .modal-content {
     position: fixed;
     background-color: #fefefe;
-    width: 30%;
+    width: 40%;
     height: 200%
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
