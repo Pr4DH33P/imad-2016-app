@@ -63,13 +63,13 @@ app.use(session({
         </div>
         <div class='horizontalrule1'><hr>
         </div> 
-                       <hr>
+                       
                        
         
                         
                         
                         
-                        <h1>${heading}</h1>
+                        
                         <div>${content}</div>
                         <hr>
                         </div>
