@@ -71,7 +71,7 @@ app.use(session({
                         
                         
                         <div class='container'>${content}</div>
-                        <hr>
+                        
                         </div>
                         <!-- <div class='footer'>
                            <input type='text' id='cmnt_box' placeholder='Type your comment'> </input>
