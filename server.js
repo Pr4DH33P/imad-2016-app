@@ -33,12 +33,15 @@ app.use(session({
                         <title>${title}</title>
                            <meta name="viewport" content="width-device-width, initial-scale=1" />
                            <link href="/ui/style.css" rel="stylesheet" />
+                           <link href="/ui/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
                         </head>
                         <body>
                         
                         
                        
-                       
+                       <div class="w3-container w3-blue">
                        <div id="myModal" class="modal">
        <div class="modal-content">
     <div class="modal-header">
@@ -53,17 +56,15 @@ app.use(session({
             <li style="padding-bottom: 2%;"><a href='/Contact'><button>Contact</button></a></li>
             <li style="padding-bottom: 2%;"><a href='/WebApp'><button>WebApp</button></a></li>
          </ul></section>
-        </div></div></div>
+        </div></div></div> 
         
         <div class="top">
             <div align='left' >
             <input type="image" id="myBtn" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" width= 4% height= 5% position= fixed margin-left= 1% class=menu /></div> 
             <h3 align=center>${heading}</h3>
 
-        </div>
-        <div class='horizontalrule1'><hr>
-        </div> 
-                       
+        </div> </div>
+            
                        
         
                         
