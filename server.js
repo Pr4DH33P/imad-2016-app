@@ -81,6 +81,7 @@ app.use(session({
                         }  
                         }
                         </script>
+                        <script type="text/javascript" src="/ui/head.js"></script>
                         </body>
                         </html>`;
         return pageTemplate;
