@@ -32,6 +32,7 @@ app.use(session({
                         <head>
                         <title>${title}</title>
                            <meta name="viewport" content="width-device-width, initial-scale=1" />
+                            <meta name="theme-color" content="#2196F3" />
                            <link href="/ui/style.css" rel="stylesheet" />
                            <link href="/ui/style.css" rel="stylesheet" />
                             <meta name="viewport" content="width=device-width, initial-scale=1">
