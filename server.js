@@ -60,31 +60,11 @@ app.use(session({
             <input type="image" id="myBtn" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" width= 4% height= 5% position= fixed margin-left= 1% class=menu /></div> 
             <h3 align=center>${heading}</h3>
 
-        </div><div class='horizontalrule1'><hr></div> 
+        </div>
+        <div class='horizontalrule1'><hr>
+        </div> 
+                       <hr>
                        
-                       
-                       
-                         <!--<div id="myModal" class="modal">
-       <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times</span>
-      <h2>Menu</h2>
-      </div>
-      <div class="modal-body">
-       
-         <section class="flat"><ul>
-            <li><a href='/'><button>Home</button></a></li>
-            <li><a href='/Profile'><button>Profile</button></a></li>
-            <li><a href='/Contact'><button>Contact</button></a></li>
-            <li><a href='/WebApp'><button>WebApp</button></a></li>
-         </ul></section>
-        </div></div></div>
-        
-        <div class="flex-container">
-            
-            <button id="myBtn" class=menu/>1</button>
-            <strong align=center>${heading}</strong></div> -->
-
         
                         
                         
