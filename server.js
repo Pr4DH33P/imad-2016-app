@@ -54,11 +54,11 @@ app.use(session({
         </div></div></div>
         
         <div class="flex-container">
-            <div align='left' >
+            
             <button id="myBtn" class=menu/>1</button>
             <strong align=center>${heading}</strong></div> 
 
-        </div>
+        
                         
                         
                         
