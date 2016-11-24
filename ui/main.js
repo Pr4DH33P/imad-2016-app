@@ -93,7 +93,7 @@ function loadLogin () {
     request.open('GET', '/check-login', true);
     request.send(null);
 }
-loadLogin();
+
 
 
 
@@ -124,3 +124,12 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+
+
+
+
+// The first thing to do is to check if the user is logged in!
+loadLogin();
+
