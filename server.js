@@ -46,12 +46,10 @@ app.use(session({
                         <h2>Menu</h2>
                         </div>
                         <div class="modal-body">
-                         <section class="flat"><ul>
-                        <li style="padding-bottom: 2%;"><a href='/'><button>Home</button></a></li>
-                        <li style="padding-bottom: 2%;"><a href='/Profile'><button>Profile</button></a></li>
-                        <li style="padding-bottom: 2%;"><a href='/Contact'><button>Contact</button></a></li>
-                        <li style="padding-bottom: 2%;"><a href='/WebApp'><button>WebApp</button></a></li>
-                        </ul></section>    
+                         <section class="flat"><p  style="padding: 2% 10%;"><a href='/'><button>Home</button></a></p>
+                            <p  style="padding: 2% 10%;"><a href='/Profile'><button>Profile</button></a></p>
+                            <p  style="padding: 2% 10%;"><a href='/Contact'><button>Contact</button></a></p>
+                            <p  style="padding: 2% 10%;"><a href='/WebApp'><button>WebApp</button></a></p></section>    
                         </div></div></div> 
                         <div class="top">
                         <div align='left' >
