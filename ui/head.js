@@ -1,9 +1,6 @@
 function loginDisp () {
-    var loginDisp = `
-        <h5>Logged in</h5>
-       
-        `;
-    document.getElementById('login_disp').innerHTML = commentFormHtml;
+    var loginDisp = `<h5>Logged in</h5>`;
+    document.getElementById('login_disp').innerHTML = loginDisp;
   
   
   
