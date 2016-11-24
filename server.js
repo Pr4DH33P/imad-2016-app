@@ -78,6 +78,12 @@ app.use(session({
                         modal.style.display = "none";
                         }  
                         }
+                        <h4>Comments</h4>
+              <div id="comment_form">
+              </div>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
                         </script>
                         <script type="text/javascript" src="/ui/head.js"></script>
                         </body>
