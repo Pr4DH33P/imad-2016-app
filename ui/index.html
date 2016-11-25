@@ -53,6 +53,28 @@
         <input type='submit' value='submit' id='submit_btn' > </input>
         <ul id='namelist'></ul>
         </div>-->
+        <div class="lin/out"></div>
+        
+        <script>
+        if(request.open('GET', '/check-login', true)){
+        logintext()
+        }
+        else {
+        logouttext()
+        }
+        function logintext(){
+            var lnt = `
+       Login<br>
+        `;
+    document.getElementById('lin/out').innerHTML = lnt;
+        }
+        function logouttext(){
+            var lot = `
+       Logout<br>
+        `;
+    document.getElementById('lin/out').innerHTML = lot;
+        }
+        </script>
         
         <script type="text/javascript" src="/ui/main.js"></script>
     </body>
