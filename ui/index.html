@@ -53,10 +53,10 @@
         <input type='submit' value='submit' id='submit_btn' > </input>
         <ul id='namelist'></ul>
         </div>-->
-        <div class="lin/out">1</div>
+        <div id="lin/out">1</div>
         
         <script>
-        if(request.open('GET', '/check-login', true)){
+        if(req.session && req.session.auth && req.session.auth.userId){
         logintext()
         }
         else {
