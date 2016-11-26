@@ -285,7 +285,7 @@ app.post('/submit-comment/:pageName', function (req, res) {
                         [req.body.comment, pageId, req.session.auth.userId],
                         function (err, result) {
                             if (err) {
-                                res.status(500).send(err.toString());
+                                res.status(500).send('err.toString()1');
                             } else {
                                 res.status(200).send('Comment inserted!')
                             }
