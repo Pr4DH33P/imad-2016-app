@@ -93,25 +93,6 @@ app.use(session({
 
 
 
-/*var comments = [];
-app.get('/comment', function (req, res) {
-  var comment = req.query.comment;
-  comments.push(comment);
-  res.send(JSON.stringify(comments));
-});
-var pool = new Pool(config);
-app.get('/db', function (req, res) {
-    pool.query('SELECT * FROM user_data', function (err,result) {
-      if (err){
-          res.status(500).send(err.toString());
-      }
-      else{
-          res.send(JSON.stringify(result));
-      }
-  });
-});
-*/
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
