@@ -273,7 +273,7 @@ app.post('/submit-comment/:pageName', function (req, res) {
         // First check if the article exists and get the article-id
         pool.query('SELECT * from page where title = $1', [req.params.pageName], function (err, result) {
             if (err) {
-                res.status(500).send('err.toString()');
+                res.status(500).send(err.toString());
             } else {
                 if (result.rows.length === 0) {
                     res.status(400).send('Page not found');
@@ -285,7 +285,7 @@ app.post('/submit-comment/:pageName', function (req, res) {
                         [req.body.comment, pageId, req.session.auth.userId],
                         function (err, result) {
                             if (err) {
-                                res.status(500).send('err.toString()1');
+                                res.status(500).send(err.toString());
                             } else {
                                 res.status(200).send('Comment inserted!')
                             }
