@@ -48,7 +48,7 @@ app.use(session({
                          <section class="flat"><p  style="padding: 2% 10%;"><a href='/'><button>Home</button></a></p>
                             <p  style="padding: 2% 10%;"><a href='/Profile'><button>Profile</button></a></p>
                             <p  style="padding: 2% 10%;"><a href='/Contact'><button>Contact</button></a></p>
-                            <p  style="padding: 2% 10%;"><a href='/WebApp'><button>WebApp</button></a></p></section>    
+                            <p  style="padding: 2% 10%;"><a href='/WebApp'><button>Register</button></a></p></section>    
                         </div></div></div> 
                         <div class="top">
                         <div align='left' >
