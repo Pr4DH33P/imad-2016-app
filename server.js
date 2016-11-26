@@ -56,7 +56,7 @@ app.use(session({
                         <h3 align=center>${heading}</h3>
                         </div> </div>
                         <div class='container'>${content}
-                                       <h4>Comments</h4>
+                                     <strong>  <h3>Comments</h3> </strong> 
               <div id="comment_form">
               </div>
               <div id="comments">
