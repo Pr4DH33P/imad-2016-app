@@ -10,7 +10,7 @@ function loadCommentForm () {
         </div>
         </div>
         <br/>
-        <input type="submit" class="btn btn-default" id="submit" value="Submit" />
+        <input type="submit" class="btn btn-default" id="submit1" value="Submit" />
         <br/>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
