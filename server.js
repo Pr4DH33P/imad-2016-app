@@ -281,7 +281,7 @@ app.post('/submit-comment/:pageName', function (req, res) {
                     var pageId = result.rows[0].id;
                     // Now insert the right comment for this article
                     pool.query(
-                        "INSERT INTO comment (comment, article_id, user_id, timestamp) VALUES ($1, $2, $3, now())",
+                        "INSERT INTO comment (comment, article_id, user_id, timestamp) VALUES ($1, $0, $3, now())",
                         [req.body.comment, pageId, req.session.auth.userId],
                         function (err, result) {
                             if (err) {
