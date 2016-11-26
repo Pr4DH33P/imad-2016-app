@@ -363,23 +363,23 @@ footer {background: #aaa;color:white;}
     background-image: url('img/facebook.png');
 }
 .facebook-social-roll:hover{
-    background-image: url('ui/img/facebook-color.png');
+    background-image: url('img/facebook-color.png');
 }
 .insta-social-roll {
-    background-image: url('ui/img/instagram.png');
+    background-image: url('img/instagram.png');
 }
 .insta-social-roll:hover{
-    background-image: url('ui/img/instagram-color.png');
+    background-image: url('img/instagram-color.png');
 }
 .li-social-roll {
-    background-image: url('ui/img/linkedin.png');
+    background-image: url('img/linkedin.png');
 }
 .li-social-roll:hover{
-    background-image: url('ui/img/linkedin-color.png');
+    background-image: url('img/linkedin-color.png');
 }
 .twitter-social-roll {
-    background-image: url('ui/img/twitter.png');
+    background-image: url('img/twitter.png');
 }
 .twitter-social-roll:hover{
-    background-image: url('ui/img/twitter-color.png');
+    background-image: url('img/twitter-color.png');
 }
