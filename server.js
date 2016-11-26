@@ -198,7 +198,9 @@ app.get('/logout', function (req, res) {
 
 
 
-
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
 var pool = new Pool(config);
 var sub = function () {
     pool.query('INSERT INTO "user" (name, age, email) VALUES ($1, $2, $3)', [name,age,email], function(err,result){
@@ -275,8 +277,8 @@ app.post('/submit-comment/:pageName', function (req, res) {
 });
 
 
-app.get('/ui/:fileName', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
+app.get('/ui/img/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/img', req.params.fileName));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
