@@ -85,8 +85,8 @@ function loadComments () {
                         <div class="commenter">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
-                    <a href="/logout">Logout</a>
-                    </div>`;
+                    </div>
+                        <a href="/logout">Logout</a>`;
                 }
                 comments.innerHTML = content;
             } else {
