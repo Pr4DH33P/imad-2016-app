@@ -83,7 +83,12 @@ app.use(session({
                         }
                         </script>
                         <script type="text/javascript" src="/ui/head.js"></script>
-                        
+                        <footer style="width:800px; margin:0 auto;" >
+          <a href="https://www.facebook.com/pr4dh33p"><div class=facebook-social-roll> </div></a>  
+         <a href="https://www.twitter.com/pradheep135"><div class=twitter-social-roll> </div></a>   
+          <a href="https://in.linkedin.com/in/pradheep-n-294007133">  <div class=li-social-roll> </div></a>
+           <a href="https://www.instagram.com/pradh33p"><div class=insta-social-roll> </div></a>  
+            </footer>
                         </body>
                         </html>`;
         return pageTemplate;
