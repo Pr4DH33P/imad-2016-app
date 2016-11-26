@@ -55,14 +55,16 @@ app.use(session({
                         <input type="image" id="myBtn" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" width= initial position= fixed margin-left= 1% class=menu /></div> 
                         <h3 align=center>${heading}</h3>
                         </div> </div>
-                        <div class='container'>${content}</div>
-                        
-                                   <h4>Comments</h4>
+                        <div class='container'>${content}
+                                       <h4>Comments</h4>
               <div id="comment_form">
               </div>
               <div id="comments">
                 <center>Loading comments...</center>
               </div>
+                        </div>
+                        
+                    
                         </div>
                         <script>
                         var modal = document.getElementById('myModal');
