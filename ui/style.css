@@ -287,17 +287,14 @@ footer {background: #aaa;color:white;}
 
 
 
-
- #footer {  
-   bottom : 2px;  
-   height : 40px;  
-   margin-top : 40px;  
-   text-align: center;  
-   vertical-align: middle; 
+#footer {
    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
    width:100%;
+   background:#999;
 }
-
 
 
 
