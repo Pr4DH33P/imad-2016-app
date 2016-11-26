@@ -12,7 +12,6 @@ function loadCommentForm () {
         <br/>
         <input type="submit" class="btn btn-default" id="submit1" value="Submit" />
         <br/>
-        <a href="/logout">Logout</a>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
     
@@ -86,6 +85,7 @@ function loadComments () {
                         <div class="commenter">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
+                    <a href="/logout">Logout</a>
                     </div>`;
                 }
                 comments.innerHTML = content;
