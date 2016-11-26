@@ -66,6 +66,11 @@
         `;
     document.getElementById('lin/out').innerHTML = lot;
         }
+       
+        $('.facebook-social-roll').each(function() {
+  var link = $(this).html();
+  $(this).contents().wrap('<a href="https://www.facebook.com"></a>');
+});
         </script>
         
         <script type="text/javascript" src="/ui/main.js"></script>
