@@ -269,7 +269,6 @@ app.get('/get-comments/:pageName', function (req, res) {
 
 app.post('/submit-comment/:pageName', function (req, res) {
    // Check if the user is logged in
-   var pageid = currentPageTitle;
     if (req.session && req.session.auth && req.session.auth.userId) {
         // First check if the article exists and get the article-id
         pool.query('SELECT * from page where title = $1', [req.params.pageName], function (err, result) {
@@ -283,7 +282,7 @@ app.post('/submit-comment/:pageName', function (req, res) {
                     // Now insert the right comment for this article
                     pool.query(
                         "INSERT INTO comment (comment, article_id, user_id, timestamp) VALUES ($1, $2, $3, now())",
-                        [req.body.comment, pageid, req.session.auth.userId],
+                        [req.body.comment, pageId, req.session.auth.userId],
                         function (err, result) {
                             if (err) {
                                 res.status(500).send(err.toString());
