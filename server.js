@@ -56,12 +56,14 @@ app.use(session({
                         <h3 align=center>${heading}</h3>
                         </div> </div>
                         <div class='container'>${content}</div>
+                        
+                                   <h4>Comments</h4>
+              <div id="comment_form">
+              </div>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
                         </div>
-                        <!-- <div class='footer'>
-                           <input type='text' id='cmnt_box' placeholder='Type your comment'> </input>
-                           <input type='submit' value='comment' id='cmnt_btn' > </input>
-                           <ul id='cmntlist'></ul>
-                        </div> -->
                         <script>
                         var modal = document.getElementById('myModal');
                         var btn = document.getElementById("myBtn");
@@ -77,14 +79,7 @@ app.use(session({
                         modal.style.display = "none";
                         }  
                         }
-                       
                         </script>
-                         <h4>Comments</h4>
-              <div id="comment_form">
-              </div>
-              <div id="comments">
-                <center>Loading comments...</center>
-              </div>
                         <script type="text/javascript" src="/ui/head.js"></script>
                         
                         </body>
