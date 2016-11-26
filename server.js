@@ -126,9 +126,10 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
-app.get('/ui/head.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'head.html'));
+app.get('/ui/head.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'head.js'));
 });
+
 
 
 function hash (input, salt) {
