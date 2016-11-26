@@ -269,6 +269,7 @@ app.get('/get-comments/:pageName', function (req, res) {
 
 app.post('/submit-comment/:pageName', function (req, res) {
    // Check if the user is logged in
+   var pageid = currentPageTitle;
     if (req.session && req.session.auth && req.session.auth.userId) {
         // First check if the article exists and get the article-id
         pool.query('SELECT * from page where title = $1', [req.params.pageName], function (err, result) {
