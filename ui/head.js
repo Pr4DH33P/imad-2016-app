@@ -12,6 +12,7 @@ function loadCommentForm () {
         <br/>
         <input type="submit" class="btn btn-default" id="submit1" value="Submit" />
         <br/>
+        <a href="/logout">Logout</a>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
     
