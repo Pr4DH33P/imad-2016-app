@@ -278,7 +278,7 @@ app.post('/submit-comment/:pageName', function (req, res) {
                 if (result.rows.length === 0) {
                     res.status(400).send('Page not found');
                 } else {
-                    var pageId = result.rows[0].id;
+                    var pageId = result.rows[0].pid;
                     // Now insert the right comment for this article
                     pool.query(
                         "INSERT INTO comment (comment, article_id, user_id, timestamp) VALUES ($1, $2, $3, now())",
