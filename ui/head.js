@@ -99,7 +99,11 @@ function loadComments () {
     request.send(null);
 }
 
+function logout(){
+     content += `<div><a href"/logout>Logout</a></div>`
+}
 
 // The first thing to do is to check if the user is logged in!
 loadLogin();
 loadComments();
+logout();
