@@ -198,9 +198,7 @@ app.get('/logout', function (req, res) {
 
 
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
+
 var pool = new Pool(config);
 var sub = function () {
     pool.query('INSERT INTO "user" (name, age, email) VALUES ($1, $2, $3)', [name,age,email], function(err,result){
