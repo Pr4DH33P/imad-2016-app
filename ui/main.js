@@ -82,7 +82,7 @@ function loadLoggedInUser (username) {
 
 function loginlogout() {
     var loginbttn = document.getElementById('login_bttn');
-    loginbttn.innerHTML = `<a href='http://pr4dh33p.imad.hasura-app.io/logout'><div><button class='submit'>Logout</button></div></a>`;
+    loginbttn.innerHTML = `<a href='/logout'>Logout</a>`;
    
 }
 
