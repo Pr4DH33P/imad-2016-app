@@ -281,7 +281,7 @@ app.get('/ui/img/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', req.params.fileName));
 });
 
-app.get('/index.html', function (req, res) {
+app.get('/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
