@@ -82,9 +82,11 @@ function loadLoggedInUser (username) {
 
 function loginlogout() {
     var loginbttn = document.getElementById('login_bttn');
-    loginbttn.innerHTML = `<Section><a href='/logout'><button class='submit'>Logout</button></a></section>`;
+    loginbttn.innerHTML = `<button class='submit'>Logout</button>`;
 }
-loginbttn.onclick= location.href='/logout';
+
+
+
 function loadLogin () {
     // Check if the user is already logged in
     var request = new XMLHttpRequest();
