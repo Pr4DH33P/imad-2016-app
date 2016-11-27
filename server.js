@@ -110,9 +110,7 @@ app.get('/ui/head.js', function (req, res) {
 });
 
 
-app.get('/ui/full/index.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'abtme.html'));
-});
+
 
 function hash (input, salt) {
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
@@ -281,6 +279,10 @@ app.post('/submit-comment/:pageName', function (req, res) {
 
 app.get('/ui/img/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', req.params.fileName));
+});
+
+app.get('/ui/full/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'abtme.html'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
