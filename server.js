@@ -93,7 +93,7 @@ app.use(session({
 
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'abtme.html'));
 });
 
 app.get('/ui/main.js', function (req, res) {
@@ -282,7 +282,7 @@ app.get('/ui/img/:fileName', function (req, res) {
 });
 
 app.get('/full/index.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'abtme.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/img/12.jpg', function (req, res) {
