@@ -23,7 +23,7 @@ body, html {
     line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
@@ -31,19 +31,19 @@ body, html {
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+
 .bgimg-1 {
     background-image: url('/ui/img/bg.jpg');
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+
 .bgimg-2 {
     background-image: url("/ui/img/12.jpg");
     min-height: 400px;
 }
 
-/* Third image (Contact) */
+
 .bgimg-3 {
     background-image: url("/ui/img/1.jpg");
     min-height: 400px;
@@ -149,7 +149,7 @@ body, html {
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
+
 <div class="w3-top">
   <ul class="w3-navbar w3-card-2 w3-animate-top w3-white" id="myNavbar">
     <li class="w3-hide-medium w3-hide-large w3-opennav w3-left">
@@ -171,7 +171,7 @@ body, html {
     </li>
   </ul>
 
-  <!-- Navbar on small screens -->
+
   <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-show">
     <ul class="w3-navbar w3-left-align w3-white">
         <li><a href="/">HOME</a></li>
@@ -183,14 +183,14 @@ body, html {
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity"> WELCOME TO MY WEBAPP</span>
   </div>
 </div>
 
-<!-- Container (About Section) -->
+
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"></p>
@@ -203,7 +203,7 @@ body, html {
       <img src="/ui/img/2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
-    <!-- Hide this text on small devices -->
+
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p></p><h3>Skills : </h3>
 <h4>Computer :</h4><ul><li>Web App development/maintenance</li><li>Android App Development</li><li>Photo/Video Editing</li>
@@ -229,14 +229,14 @@ body, html {
 
 
 
-<!-- Second Parallax Image with Portfolio Text -->
+
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-light-grey w3-wide">ACHIEVEMENTS</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"></p><ul>
@@ -250,8 +250,6 @@ body, html {
 
   
   <p></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   
 
   
@@ -276,7 +274,7 @@ body, html {
   
 </div>
 
-<!-- Modal for full size images on click-->
+
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -285,21 +283,21 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
+
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">Want to get in touch with me?</h3>
   <p class="w3-center"><em>I'd love your feedback!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
+     
       
     </div>
     <div class="w3-col m8 w3-container w3-section">
@@ -320,7 +318,7 @@ body, html {
   </div>
 </div>
 
-<!-- Footer -->
+
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
  <br> <a href='/m/index.html'>Load basic HTML<br>(Suitable for mobile phones)</a>
@@ -330,7 +328,7 @@ body, html {
  
 
 <script>
-// Change style of navbar on scroll
+
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -341,7 +339,6 @@ function myFunction() {
     }
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
