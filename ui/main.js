@@ -138,7 +138,8 @@ window.onclick = function(event) {
 
 
 
-
+ var loginbttn1 = document.getElementById('login_bttn');
+ loginbttn1.onclick= location.href='/logout';
 
 
 // The first thing to do is to check if the user is logged in!
