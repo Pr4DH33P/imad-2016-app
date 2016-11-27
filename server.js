@@ -45,7 +45,7 @@ app.use(session({
                         <h2>Menu</h2>
                         </div>
                         <div class="modal-body">
-                         <section class="flat"><p  style="padding: 2% 10%;"><a href='/'><button>Home</button></a></p>
+                         <section class="flat"><p  style="padding: 2% 10%;"><a href='/m/index'><button>Home</button></a></p>
                             <p  style="padding: 2% 10%;"><a href='/Profile'><button>Profile</button></a></p>
                             <p  style="padding: 2% 10%;"><a href='/Contact'><button>Contact</button></a></p>
                             <p  style="padding: 2% 10%;"><a href='/WebApp'><button>Register</button></a></p></section>    
@@ -281,9 +281,6 @@ app.get('/ui/img/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', req.params.fileName));
 });
 
-app.get('/index', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
 
 app.get('/m/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
