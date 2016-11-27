@@ -82,7 +82,7 @@ function loadLoggedInUser (username) {
 
 function loginlogout() {
     var loginbttn = document.getElementById('login_bttn');
-    loginbttn.innerHTML = `<Section><a href='/logout'>Logout</a></section>`;
+    loginbttn.innerHTML = `<Section><a href='/logout'><button class='submit'>Logout</button></a></section>`;
 }
 
 function loadLogin () {
