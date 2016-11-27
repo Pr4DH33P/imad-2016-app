@@ -285,6 +285,10 @@ app.get('/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/m/index', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 app.get('/ui/img/12.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', '12.jpg'));
 });
