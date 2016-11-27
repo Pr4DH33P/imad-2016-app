@@ -83,7 +83,7 @@ function loadLoggedInUser (username) {
 function loginlogout() {
     var loginbttn = document.getElementById('login_bttn');
     loginbttn.innerHTML = `<button class='submit'>Logout</button>`;
-    loginbttn.onclick = lgt();
+   
 }
 
 
@@ -137,11 +137,6 @@ window.onclick = function(event) {
     }
 }
 
-
-function lgt(){
- var loginbttn1 = document.getElementById('login_bttn');
- loginbttn1.onclick= location.href='/logout';
-}
 
 
 // The first thing to do is to check if the user is logged in!
