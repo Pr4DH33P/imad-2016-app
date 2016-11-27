@@ -286,7 +286,7 @@ footer {background: #aaa;color:white;}
 
 
 
-#footer
+.footer
 {
     background-color:blue;
     position:fixed;
