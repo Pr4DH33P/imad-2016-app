@@ -110,7 +110,7 @@ app.get('/ui/head.js', function (req, res) {
 });
 
 
-app.get('/ui/full', function (req, res) {
+app.get('/ui/full/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'abtme.html'));
 });
 
